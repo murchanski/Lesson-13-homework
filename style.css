@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: #201e1e;
+	font-size:22px;
+	line-height: 32px;
+	color: white;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+	margin: 50px 10px;
+	background-color: #e21111;
+}
+
+a {
+	color: white;
+}
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #e21111;
+}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:white;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: black; 
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px;
+}
+
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+nav ul ul li {
+	width:170px;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: white;
+    margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	font-family: 'Bree Serif', 'serif';
+}
+
+p {
+	text-align: center;
+    margin-top: 35px;
+}
